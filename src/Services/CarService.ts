@@ -33,7 +33,7 @@ export default class CarService {
   }
 
   public async findOneCar(id: string): Promise<IHttpResponse<Car | string>> {
-    const car = await this.carOdm.findOneCar(id);
+    const car = await this.carOdm.findOne(id);
     
     if (car === null) return badRequest('Car not found');
     
@@ -46,7 +46,7 @@ export default class CarService {
   }
 
   public async updateCar(id: string, car: ICar): Promise<IHttpResponse<Car | string>> {
-    const updatedCar = await this.carOdm.updateCar(id, car);
+    const updatedCar = await this.carOdm.update(id, car);
     
     if (updatedCar === null) return badRequest('Car not found');
     
