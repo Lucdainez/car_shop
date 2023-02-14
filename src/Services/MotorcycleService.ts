@@ -51,7 +51,7 @@ export default class CarService {
   ): Promise<IHttpResponse<Motorcycle | string>> {
     const updatedMotorcycle = await this.motorcycleOdm.update(id, motorcycle);
     
-    if (updatedMotorcycle === null) return badRequest('Car not found');
+    if (updatedMotorcycle === null) return badRequest('Motorcycle not found');
     
     const instaceCar = this.createMotorcycleDomain(updatedMotorcycle);
     
