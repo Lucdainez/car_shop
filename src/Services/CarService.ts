@@ -1,6 +1,8 @@
 import ICar from '../Interfaces/ICar';
+import IHttpResponse from '../Interfaces/IHttpResponse';
 import CarODM from '../Models/CarODM';
 import Car from '../Domains/Car';
+import { badRequest } from '../utils/BadResponses';
 
 export default class CarService {
   private carOdm: CarODM;
@@ -20,5 +22,20 @@ export default class CarService {
   public async createCar(car: ICar) {
     const newCar = await this.carOdm.create(car);
     return this.createCarDomain(newCar);
+  }
+
+  public async findAll(): Promise<Car[]> {
+    const allCars = await this.carOdm.findAll();
+    return allCars.map((car) => this.createCarDomain(car)) as Car[];
+  }
+
+  public async findOneCar(id: string): Promise<IHttpResponse<Car | string>> {
+    const car = await this.carOdm.findOneCar(id);
+    if (car === null) return badRequest('Car not found');
+    const instaceCar = this.createCarDomain(car);
+    return {
+      statusCode: 200,
+      body: instaceCar as Car,
+    };
   }
 }
