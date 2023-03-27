@@ -199,7 +199,7 @@ No back-end, foram implementados testes de unidade utilizando a biblioteca [Moch
 
 <br>
 <details>
-  <summary><strong>Instalação</strong></summary><br />
+  <summary><strong>INSTALAÇÃO</strong></summary><br />
  
 <hr>
 <details>
