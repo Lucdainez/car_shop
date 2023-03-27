@@ -198,8 +198,42 @@ Foram implementados testes unitários durante o desenvolvimento da API para gara
 No back-end, foram implementados testes de unidade utilizando a biblioteca [Mocha](https://mochajs.org/), o framework de asserção [Chai](https://www.chaijs.com/) e a biblioteca de simulação [Sinon](https://sinonjs.org/).
 
 <br>
+<details>
+  <summary><strong>Instalação</strong></summary><br />
+ 
+<hr>
+<details>
+<summary><strong> ⚠️ Configurações mínimas para execução do projeto</strong></summary><br />
 
-## Instalação 
+Na sua máquina você deve ter:
+
+ - Sistema Operacional Distribuição Unix (Preferencialmente)
+ - Node versão 16
+ - Docker
+ - Docker-compose versão >=1.29.2
+
+➡️ O `node` deve ter versão igual ou superior à `16.14.0 LTS`:
+  - Para instalar o nvm, [acesse esse link](https://github.com/nvm-sh/nvm#installing-and-updating);
+  - Rode os comandos abaixo para instalar a versão correta de `node` e usá-la:
+    - `nvm install 16.14 --lts`
+    - `nvm use 16.14`
+    - `nvm alias default 16.14`
+
+➡️ O`docker-compose` deve ter versão igual ou superior à`ˆ1.29.2`:
+  * Use esse [link de referência para realizar a instalação corretamente no ubuntu](https://app.betrybe.com/learn/course/5e938f69-6e32-43b3-9685-c936530fd326/module/94d0e996-1827-4fbc-bc24-c99fb592925b/section/5987fa2d-0d04-45b2-9d91-1c2ffce09862/day/2f1a5c4d-74b1-488a-8d9b-408682c93724/lesson/b883b81d-21f6-4b60-aa62-8508f6017ea0);
+  * Acesse o [link da documentação oficial com passos para desinstalar](https://docs.docker.com/compose/install/#uninstallation) caso necessário.
+
+</details>
+<hr>
+<br>
+
+> - :warning: Antes de começar, seu docker-compose precisa estar na versão 1.29 ou superior. [Veja aqui](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04-pt) ou [na documentação](https://docs.docker.com/compose/install/) como instalá-lo. No primeiro artigo, você pode substituir onde está com `1.26.0` por `1.29.2`.
+
+> - :warning: Caso opte por utilizar o Docker, **TODOS** os comandos disponíveis no `package.json` (npm start, npm test, npm run dev, ...) devem ser executados **DENTRO** do container, ou seja, no terminal que aparece após a execução do comando `docker exec` citado acima
+
+> - :warning: Se você se deparar com o erro abaixo, quer dizer que sua aplicação já esta utilizando a `porta 3001`, seja com outro processo do Node.js (que você pode parar com o comando `killall node`) ou algum container! Neste caso você pode parar o container com o comando `docker stop <nome-do-container>`
+
+<br>
 
 <br>
 
@@ -309,6 +343,7 @@ git push origin sua-feature-ou-correcao
 ## Tecnologias e Ferramentas
 
 - Linguagem: [TypeScript](https://www.typescriptlang.org/)
+- Paradigma de Programação: [Programação Orientada a Objetos(POO)](https://blog.betrybe.com/tecnologia/poo-programacao-orientada-a-objetos/)
 - Plataforma de desenvolvimento: [Node](https://nodejs.org/en/)
 - Virtualização: [Docker](https://www.docker.com/)
 - Padrão de arquitetura de API: [API RESTful](https://blog.betrybe.com/desenvolvimento-web/api-rest-tudo-sobre/)
