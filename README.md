@@ -203,10 +203,10 @@ No back-end, foram implementados testes de unidade utilizando a biblioteca [Moch
 
 <br>
 
-- Clone o repositório `git@github.com:Rafael-Souza-97/ibirita-delivery-app.git`: 
+- Clone o repositório `git@github.com:Lucdainez/car_shop.git`: 
 
 ```bash
-git clone git@github.com:Rafael-Souza-97/ibirita-delivery-app.git
+git clone git@github.com:Lucdainez/car_shop.git
 ```
 
 <br>
@@ -214,7 +214,7 @@ git clone git@github.com:Rafael-Souza-97/ibirita-delivery-app.git
 - Entre na pasta do repositório que você acabou de clonar:
 
 ```bash
-cd ibirita-delivery-app
+cd car_shop
 ```
 
 <br>
