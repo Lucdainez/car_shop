@@ -20,7 +20,7 @@ Antes de cada rota utilize: `http://localhost:3001`
 
 exemplo: `http://localhost:3001/cars`
 
-- `/cars` - Rota do tipo `Post`, é o caminho que deve ser acessado para criar um novo carro no banco de dados. Os atributos necessários para criar um carro, como modelo, ano, cor, quantidade de portas e assentos, entre outros, são especificados na tabela fornecida.
+- `/cars` - Rota do tipo `POST`, é o caminho que deve ser acessado para criar um novo carro no banco de dados. Os atributos necessários para criar um carro, como modelo, ano, cor, quantidade de portas e assentos, entre outros, são especificados na tabela fornecida.
 
 - O corpo da requisição poderá seguir o formato abaixo:
 
@@ -36,7 +36,7 @@ exemplo: `http://localhost:3001/cars`
   }
   ```
 
-- `/cars` - Rota do tipo `Get`, é o caminho para retornar e mostrar todos os carros salvos no banco de dados.
+- `/cars` - Rota do tipo `GET`, é o caminho para retornar e mostrar todos os carros salvos no banco de dados.
 
    ```json
         [
@@ -62,7 +62,7 @@ exemplo: `http://localhost:3001/cars`
         ]
       
 
-- `/cars/:id` - Rota do tipo `Get`, é o caminho para retornar e mostrar um carro especificado pelo seu id no banco de dados.
+- `/cars/:id` - Rota do tipo `GET`, é o caminho para retornar e mostrar um carro especificado pelo seu id no banco de dados.
 
      ```json
         {
@@ -77,7 +77,7 @@ exemplo: `http://localhost:3001/cars`
         }
       
 
-- `/cars/:id` - Rota do tipo `Put`, é o caminho para atualizar um carro especificado pelo seu id no banco de dados.
+- `/cars/:id` - Rota do tipo `PUT`, é o caminho para atualizar um carro especificado pelo seu id no banco de dados.
 
 - O corpo da requisição poderá seguir o formato abaixo:
   ```json
@@ -92,7 +92,7 @@ exemplo: `http://localhost:3001/cars`
   }
   ```
 
-- `/motorcycles` - Rota do tipo `Post`, é o caminho que deve ser acessado para criar uma nova moto no banco de dados. Os atributos necessários para criar uma moto, como modelo, ano, cor, entre outros, são especificados na tabela fornecida.
+- `/motorcycles` - Rota do tipo `POST`, é o caminho que deve ser acessado para criar uma nova moto no banco de dados. Os atributos necessários para criar uma moto, como modelo, ano, cor, entre outros, são especificados na tabela fornecida.
 
 - O corpo da requisição poderá seguir o formato abaixo:
   ```json
@@ -107,7 +107,7 @@ exemplo: `http://localhost:3001/cars`
   }
   ```
 
-- `/motorcycles` - Rota do tipo `Get`, é o caminho para retornar e mostrar todas as motos salvas no banco de dados.
+- `/motorcycles` - Rota do tipo `GET`, é o caminho para retornar e mostrar todas as motos salvas no banco de dados.
 
   ```json
           [
@@ -134,7 +134,7 @@ exemplo: `http://localhost:3001/cars`
           ]
         
 
-- `/motorcycles/:id` - Rota do tipo `Get`, é o caminho para retornar e mostrar uma moto especificada pelo seu id no banco de dados.
+- `/motorcycles/:id` - Rota do tipo `GET`, é o caminho para retornar e mostrar uma moto especificada pelo seu id no banco de dados.
 
   ```json
           {
@@ -149,7 +149,7 @@ exemplo: `http://localhost:3001/cars`
           }
   ````
 
-- `/motorcycles/:id` - Rota do tipo `Put`, é o caminho para atualizar uma moto especificada pelo seu id no banco de dados.
+- `/motorcycles/:id` - Rota do tipo `PUT`, é o caminho para atualizar uma moto especificada pelo seu id no banco de dados.
 
 - O corpo da requisição poderá seguir o formato abaixo:
 
